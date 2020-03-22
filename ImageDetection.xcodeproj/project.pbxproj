@@ -15,6 +15,8 @@
 		5424080523FE54CB00C57B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5424080323FE54CB00C57B62 /* LaunchScreen.storyboard */; };
 		5424081023FE54CB00C57B62 /* ImageDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424080F23FE54CB00C57B62 /* ImageDetectionTests.swift */; };
 		5424081B23FE54CB00C57B62 /* ImageDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424081A23FE54CB00C57B62 /* ImageDetectionUITests.swift */; };
+		5424082923FE6A1400C57B62 /* ViewController+ARSessionDeletegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424082823FE6A1400C57B62 /* ViewController+ARSessionDeletegate.swift */; };
+		5424082C23FE935100C57B62 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424082B23FE935100C57B62 /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5424081623FE54CB00C57B62 /* ImageDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5424081A23FE54CB00C57B62 /* ImageDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionUITests.swift; sourceTree = "<group>"; };
 		5424081C23FE54CB00C57B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5424082823FE6A1400C57B62 /* ViewController+ARSessionDeletegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSessionDeletegate.swift"; sourceTree = "<group>"; };
+		5424082B23FE935100C57B62 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		542407F723FE54C900C57B62 /* ImageDetection */ = {
 			isa = PBXGroup;
 			children = (
+				5424082A23FE932B00C57B62 /* Additional View Controller */,
 				542407F823FE54C900C57B62 /* AppDelegate.swift */,
 				542407FA23FE54C900C57B62 /* SceneDelegate.swift */,
 				542407FC23FE54C900C57B62 /* ViewController.swift */,
+				5424082823FE6A1400C57B62 /* ViewController+ARSessionDeletegate.swift */,
 				542407FE23FE54C900C57B62 /* Main.storyboard */,
 				5424080123FE54CB00C57B62 /* Assets.xcassets */,
 				5424080323FE54CB00C57B62 /* LaunchScreen.storyboard */,
@@ -126,6 +132,14 @@
 				5424081C23FE54CB00C57B62 /* Info.plist */,
 			);
 			path = ImageDetectionUITests;
+			sourceTree = "<group>";
+		};
+		5424082A23FE932B00C57B62 /* Additional View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5424082B23FE935100C57B62 /* StatusViewController.swift */,
+			);
+			path = "Additional View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5424082923FE6A1400C57B62 /* ViewController+ARSessionDeletegate.swift in Sources */,
 				542407FD23FE54C900C57B62 /* ViewController.swift in Sources */,
 				542407F923FE54C900C57B62 /* AppDelegate.swift in Sources */,
 				542407FB23FE54C900C57B62 /* SceneDelegate.swift in Sources */,
+				5424082C23FE935100C57B62 /* StatusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
