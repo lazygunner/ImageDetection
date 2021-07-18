@@ -9,6 +9,7 @@
 import ARKit
 import SceneKit
 import UIKit
+import SceneKit.ModelIO
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
@@ -103,6 +104,26 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             planeNode.runAction(self.imageHighlightAction)
             
             node.addChildNode(planeNode)
+            
+            /*
+              增加 3D 对象
+             */
+            guard let urlPath = Bundle.main.url(forResource: "obj47", withExtension: "usdz") else {
+                NSLog("load obj47 failed")
+                return
+            }
+            let mdlAsset = MDLAsset(url: urlPath)
+            // you can load the textures on an MDAsset so it's not white
+            mdlAsset.loadTextures()
+            
+            let asset = mdlAsset.object(at: 0) // extract first object
+            let assetNode = SCNNode(mdlObject: asset)
+            assetNode.eulerAngles.x = -.pi / 2
+            assetNode.runAction(.moveBy(x: 0, y: 0, z: 30, duration: 1))
+            assetNode.scale = SCNVector3(100, 100, 100)
+            assetNode.runAction(.repeatForever(.rotateBy(x: 0, y: 0, z: 0.5, duration: 0.3)))
+            node.addChildNode(assetNode)
+
         }
     }
     
